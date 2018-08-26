@@ -15,9 +15,9 @@ request.responseType = 'json';
 request.send();
 
 request.onload = function() {
-  var ethereum = request.response;
-  populateEth(ethereum);
-  showEth(ethereum);
+  var eth = request.response;
+  populateEth(eth);
+  showEth(eth);
 }
 
 function populateEth(jsonObj) {
