@@ -18,7 +18,7 @@
     <script src="../js/btc.js" type="text/javascript"></script>
 
 </head>
-<body onload="load()">
+<body>
   <main class="main-content">
     <div class="center">
       <div class="main-content__select">
@@ -173,5 +173,12 @@
   <!-- <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script> -->
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script src="js/custom-select.js">  </script>
+  <script>
+      document.addEventListener("DOMContentLoaded", function ()  {
+          requestAndShowBtc();
+          requestAndShowEth();
+          requestAndShowLtc();
+      });
+  </script>
 </body>
 </html>
