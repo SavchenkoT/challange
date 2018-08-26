@@ -16,8 +16,8 @@ request.send();
 
 request.onload = function() {
   var btc = request.response;
-  populateLtc(btc);
-  showLtc(btc);
+  populateBtc(btc);
+  showBtc(btc);
 }
 
 function populateLtc(jsonObj) {
