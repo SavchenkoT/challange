@@ -20,7 +20,7 @@ request.onload = function() {
   showBtc(btc);
 }
 
-function populateLtc(jsonObj) {
+function populateBtc(jsonObj) {
   var finalBtc = document.getElementById('final-btc');
   finalBtc.textContent = jsonObj['last'];
   getElementById('final-btc').innerText = jsonData.finalBtc
