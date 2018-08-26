@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Challange</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://use.fontawesome.com/3a78949837.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <script src="../js/challange-eth.js" type="text/javascript"></script>
+    <script src="../js/challange-ltc.js" type="text/javascript"></script>
+    <script src="../js/challange-btc.js" type="text/javascript"></script>
+
+</head>
+<body onload="load()">
+  <main class="main-content">
+    <div class="center">
+      <div class="main-content__select">
+        <h1>Select currency to exhange:</h1>
+        <select autofocus="autofocus" name="sources" id="sources" class="custom-select sources selectpicker" placeholder="USD">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="RUB">RUB</option>
+            <option value="GBR">GBR</option>
+        </select>
+      </div>
+      <div class="main-content__currency" id="ethereum">
+        <div class="main-content__eth">
+          <div class="currency">
+            <span class="currency__name">Ethereum</span>
+            <img class="currency__img" src="../img/ethcoin.png" width="150px"/>
+          </div>
+
+          <table class="table">
+            <thead>
+                <tr>
+                    <th class="text-left name">Price</th>
+                    <th class="final-price text-right" id="final-eth"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-md-5 text-left">Percent change</td>
+                    <td class="col-md-7">
+                      <label class="switch">
+                        <input type="checkbox" class="primary">
+                        <span class="slider"></span>
+                      </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-5 text-left change-hour">Hour change</td>
+                    <td class="col-md-7 text-price hour-eth" id="hour-eth"></td>
+                </tr>
+                <tr>
+                    <td class="col-md-5 text-left change-day">Day change</td>
+                    <td class="col-md-7 text-price day-eth" id="day-eth"></td>
+                </tr>
+                <tr>
+                    <td class="col-md-5 text-left change-week">Week change</td>
+                    <td class="col-md-7 text-price week-eth" id="week-eth"></td>
+                </tr>
+                <tr>
+                    <td class="col-md-5 text-left change-month">Month change</td>
+                    <td class="col-md-7 text-price month-eth" id="month-eth"></td>
+                </tr>
+            </tbody>
+          </table>
+
+        </div>
+        <div class="main-content__lit" id="litecoin">
+          <div class="currency">
+            <span class="currency__name">Litcoin</span>
+            <img class="currency__img" src="../img/litcoin.gif" />
+          </div>
+
+          <table class="table">
+            <thead>
+                <tr>
+                    <th class="text-left name">Price</th>
+                    <th class="final-price text-right" id="final-ltc"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-md-5 text-left">Percent change</td>
+                    <td class="col-md-7">
+                      <label class="switch">
+                        <input type="checkbox" class="primary">
+                        <span class="slider"></span>
+                      </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-5 text-left">Hour change</td>
+                    <td class="col-md-7 text-price">+266%</td>
+                </tr>
+                <tr>
+                    <td class="col-md-5 text-left">Day change</td>
+                    <td class="col-md-7 text-price">+266%</td>
+                </tr>
+                <tr>
+                    <td class="col-md-5 text-left">Week change</td>
+                    <td class="col-md-7 text-price">+266%</td>
+                </tr>
+                <tr>
+                    <td class="col-md-5 text-left">Month change</td>
+                    <td class="col-md-7 text-price">+266%</td>
+                </tr>
+            </tbody>
+          </table>
+
+        </div>
+        <div class="main-content__bit" id="bitcoin">
+          <div class="currency">
+            <span class="currency__name">Bitcoin</span>
+            <img class="currency__img" src="../img/bit-coin.gif" />
+          </div>
+
+          <table class="table">
+            <thead>
+                <tr>
+                    <th class="text-left name">Price</th>
+                    <th class="final-price text-right" id="final-btc"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-md-5 text-left">Percent change</td>
+                    <td class="col-md-7">
+                      <label class="switch">
+                        <input type="checkbox" class="primary">
+                        <span class="slider"></span>
+                      </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-5 text-left change-hour">Hour change</td>
+                    <td class="col-md-7 text-price hour-price">+266%</td>
+                </tr>
+                <tr>
+                    <td class="col-md-5 text-left change-day">Day change</td>
+                    <td class="col-md-7 text-price day-price">+266%</td>
+                </tr>
+                <tr>
+                    <td class="col-md-5 text-left change-week">Week change</td>
+                    <td class="col-md-7 text-price week-price">+266%</td>
+                </tr>
+                <tr>
+                    <td class="col-md-5 text-left change-month">Month change</td>
+                    <td class="col-md-7 text-price mount-price">+266%</td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div id="box"></div>
+
+
+  </main>
+  <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+  <!-- <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script> -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script src="js/custom-select.js">  </script>
+</body>
+</html>

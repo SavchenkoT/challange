@@ -1,0 +1,26 @@
+{
+  "name": "challange",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node gulpfile.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SavchenkoT/challange.git"
+  },
+  "author": "savchenkot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SavchenkoT/challange/issues"
+  },
+  "homepage": "https://github.com/SavchenkoT/challange#readme",
+  "dependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp-sass": "^4.0.1"
+  }
+}
